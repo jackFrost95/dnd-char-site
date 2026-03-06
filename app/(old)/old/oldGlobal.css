@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background: #111;
+}
+
+a[href^="#"] {
+    overflow-wrap: break-word;
+    color: #0096FF;
+}
+
+.spacer {
+    height: 150vh;
+}
+
+.fixed-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: opacity 0.2s linear;
+    pointer-events: none;
+}
+
+/* your two images */
+.img1 {
+    opacity: 1;
+}
+
+.img2 {
+    opacity: 0;
+}
+
+.content-box {
+    position: relative;
+    max-width: 800px auto;
+    margin: 20px;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px auto;
+
+    color: white;
+    z-index: 10;
+    backdrop-filter: blur(6px);
+}
+
+.content-box-alt {
+    position: relative;
+    max-width: 800px auto;
+    margin: 20px;
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px auto;
+
+    color: white;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* vertically aligns text + image */
+    justify-content: space-between; /* pushes image to the right */
+    max-width: 1920px auto;
+    margin: 20px auto;
+}
+
+.container img {
+    width: 50%;
+    height: auto;
+    margin-left: 20px auto;
+}
